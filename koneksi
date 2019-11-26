@@ -1,0 +1,21 @@
+
+package crudpesawat;
+import java.sql.*;
+
+public class koneksi {
+    public Connection cc;
+    public Statement ss;
+    public ResultSet rr;
+            
+public void Class (){
+    
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        cc=DriverManager.getConnection("jdbc:mysql://localhost/pemesanan tiket","root","");
+        System.out.println("koneksi okey");
+        } catch (Exception e){
+            System.out.println(e);
+            
+    }
+}  
+}
